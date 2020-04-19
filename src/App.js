@@ -9,7 +9,7 @@ function App() {
       <div className="artwork"></div>
 
       <div className="metadata">
-        <h1 className="radio-name">Radio Da'i</h1>
+        <h1 className="radio-name">Radio Dai</h1>
         <p className="address">Butuh - Tengaran - Kab. Semarang</p>
         <p className="freq">107.9 FM</p>
       </div>
