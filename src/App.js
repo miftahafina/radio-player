@@ -8,8 +8,8 @@ import PlayIcon from './play.png';
 import PauseIcon from './pause.png';
 
 function App() {
-  const [playing, setPlaying] = useState(true);
-  const [icon, setIcon] = useState(PauseIcon);
+  const [playing, setPlaying] = useState(false);
+  const [icon, setIcon] = useState(PlayIcon);
 
   const handleClick = () => {
     playing === true ? setPlaying(false) : setPlaying(true);
