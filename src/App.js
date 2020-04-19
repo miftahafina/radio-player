@@ -17,7 +17,7 @@ function App() {
 
       <div className="control">
         <button className="play">
-          <img src={PauseIcon} alt="play button" />
+          <img src={PlayIcon} alt="play button" />
         </button>
       </div>
     </div>

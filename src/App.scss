@@ -5,8 +5,8 @@ $secondary     : #C4C4C4;
 $tertiary      : #F0F0F0;
 $text          : #000000;
 $text-secondary: #8D8C8C;
-$bg            : #fff;
-$bg-secondary  : #e9e8e6;
+$bg-secondary  : #fff;
+$bg            : #e9e8e6;
 
 @mixin flexbox($direction, $align, $justify) {
   display: flex;
@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: $bg-secondary;
+  background-color: $bg;
 }
 
 .container {
@@ -42,13 +42,13 @@ body {
   box-sizing: border-box;
   width: 100%;
   padding-top: 100%;
-  background-color: $bg-secondary;
+  background-color: $bg;
   border-radius: 16px;
-  margin: 44px auto 44px auto;
+  margin: 32px auto 32px auto;
   background-image: url('./cactus.jpg');
   background-position: bottom right;
   background-repeat: no-repeat;
-  border: 4px solid $bg;
+  border: 4px solid $bg-secondary;
   -webkit-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
   box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
@@ -57,7 +57,7 @@ body {
 .metadata {
   @include flexbox(column, flex-start, space-between);
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .radio-name {
@@ -81,12 +81,12 @@ body {
 
 .control {
   @include flexbox(column, center, space-between);
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .play {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   margin-left: auto;
   margin-right: auto;
   background-color: $primary;
@@ -94,9 +94,10 @@ body {
   border: none;
   border-radius: 50%;
   font-size: 56px;
+  @include flexbox(row, center, space-between);
 
   img {
-    width: 40px;
+    width: 24px;
     margin: auto;
   }
 }
