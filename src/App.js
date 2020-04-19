@@ -2,6 +2,7 @@ import React from 'react';
 import 'normalize.css';
 import './App.scss';
 import PlayIcon from './play.png';
+import PauseIcon from './pause.png';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
 
       <div className="control">
         <button className="play">
-          <img src={PlayIcon} alt="play button" />
+          <img src={PauseIcon} alt="play button" />
         </button>
       </div>
     </div>

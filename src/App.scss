@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Scheherazade&display=swap');
 
-$primary       : #50C140;
+$primary       : #2c6a33;
 $secondary     : #C4C4C4;
 $tertiary      : #F0F0F0;
 $text          : #000000;
@@ -42,8 +42,14 @@ body {
   width: 100%;
   padding-top: 100%;
   background-color: $primary;
-  border-radius: 8px;
+  border-radius: 16px;
   margin: 44px auto 44px auto;
+  background-image: url('./cactus.jpg');
+  background-position: bottom right;
+  border: 4px solid $bg;
+  -webkit-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.3);
 }
 
 .metadata {
@@ -84,8 +90,11 @@ body {
   background-color: $primary;
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 50%;
   font-size: 56px;
-  padding: 8px 0 0 8px;
-  border: 2px solid $primary;
+
+  img {
+    width: 40px;
+    margin: auto;
+  }
 }
