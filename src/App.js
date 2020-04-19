@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'normalize.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="artwork">
+        Artwork
+      </div>
+
+      <div className="metadata">
+        <h1 className="radio-name">Radio Da'i</h1>
+        <p className="address">Butuh - Tengaran - Kab. Semarang</p>
+        <p className="freq">107.9 FM</p>
+      </div>
+
+      <div className="control">
+        <button className="play">&raquo;</button>
+      </div>
     </div>
   );
 }
